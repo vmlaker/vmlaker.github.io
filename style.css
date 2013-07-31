@@ -1,0 +1,80 @@
+/* Link preferences. */
+a {
+  color: blue; }
+
+a:link {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:active {
+  text-decoration: underline; }
+
+body {
+  margin-top: 20px;
+  font-size: 100%;
+  font-family: Arial;
+  background-color: steelblue; }
+
+.main_block {
+  position: relative;
+  width: 400px;
+  /*
+  min-width: 300px;
+  max-width: 600px;
+  */
+  margin: auto;
+  padding: 40px 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: navy;
+  border-radius: 15px;
+  background-color: white; }
+
+.title {
+  text-align: center; }
+
+.blurb {
+  padding: 2em 2em 3em 2em; }
+
+.proj_row {
+  position: relative;
+  width: 300px;
+  height: 90px;
+  margin: auto;
+  /*
+  border-style: solid;
+  border-color: blue;
+  */ }
+
+.proj_left {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  width: 150px; }
+
+.proj_right {
+  position: absolute;
+  text-align: center;
+  left: 150px;
+  width: 150px; }
+
+.proj_center {
+  position: absolute;
+  text-align: center;
+  left: 75px;
+  width: 150px; }
+
+.footer {
+  /* Since container is relative,
+     this places footer on the bottom. */
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  text-align: center;
+  font-size: 75%;
+  font-style: italic; }
