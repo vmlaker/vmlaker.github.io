@@ -1,0 +1,88 @@
+$bg-color: steelblue;
+$link-color: blue;
+
+$row-width: 300px;
+$row-height: 90px;
+$proj-width: $row-width / 2;
+
+/* Link preferences. */
+a         {color: $link-color;}
+a:link    {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover   {text-decoration: underline;}
+a:active  {text-decoration: underline;}
+
+body{
+    margin-top: 20px;
+    font-size: 100%;
+    font-family: Arial;
+    background-color: $bg-color;
+}
+
+.main_block{
+    position: relative;
+    width: 400px;
+    //height: 500px;
+    /*
+    min-width: 300px;
+    max-width: 600px;
+    */
+
+    margin: auto;
+    padding: 40px 0;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: navy;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.title{
+    text-align: center;
+}
+
+.blurb{
+    padding: 2em 2em 3em 2em;
+}
+
+.proj_row{
+    position: relative;
+    width: $row-width;
+    height: $row-height;
+    margin: auto;
+    /*
+    border-style: solid;
+    border-color: blue;
+    */
+}
+.proj_left{
+    position: absolute;
+    text-align: center;
+    left: 0;
+    width: $proj-width;
+}
+.proj_right{
+    position: absolute;
+    text-align: center;
+    left: $row-width / 2;
+    width: $proj-width;
+}
+.proj_center{
+    position: absolute;
+    text-align: center;
+    left: $row-width / 2 - $proj-width / 2;
+    width: $proj-width;
+}
+
+.footer{
+    /* Since container is relative,
+       this places footer on the bottom. */
+    position: absolute;
+    bottom: 1em;
+
+    width: 100%;
+    text-align: center;
+    font-size: 75%;
+    font-style: italic;
+}
