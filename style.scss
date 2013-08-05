@@ -1,88 +1,142 @@
-$bg-color: steelblue;
-$link-color: blue;
+/* Defines Sassy CSS stying for the page. */
 
-$row-width: 300px;
-$row-height: 90px;
-$proj-width: $row-width / 2;
+$bg-color: steelblue;
+$text-color: black;
+$block-width: 500px;
+$row-width: 500px;
+$row-height: 80px;
+$debug-border: none;
+
+/* Activate for debug. */
+/*$debug-border: solid 1px gray;
+*/
+
 
 /* Link preferences. */
-a         {color: $link-color;}
-a:link    {text-decoration: none;}
-a:visited {text-decoration: none;}
-a:hover   {text-decoration: underline;}
-a:active  {text-decoration: underline;}
+a{
+    color: $text-color;
+    text-decoration: none;
+}
+a:link{}
+a:visited{}
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+a:active{
+    color: blue;
+    text-decoration: underline;
+}
 
 body{
     margin-top: 20px;
-    font-size: 100%;
+    font-size: 110%;
     font-family: Arial;
+    color: $text-color;
+    background-image:  url(bg.png);
+    background-repeat: repeat-x; 
+
     background-color: $bg-color;
 }
 
 .main_block{
     position: relative;
-    width: 400px;
-    //height: 500px;
-    /*
-    min-width: 300px;
-    max-width: 600px;
-    */
-
+    width: $block-width;
     margin: auto;
-    padding: 40px 0;
+    padding: 0;
 
-    border-style: solid;
-    border-width: 1px;
-    border-color: navy;
+    background-image:  url(block_bg.png);
+    background-repeat: repeat-x; 
+
+    //border-style: solid;
+    //border-width: 1px;
+    //border-color: gray;
+
     border-radius: 15px;
     background-color: white;
+    box-shadow: 0 0 30px black;
 }
 
 .title{
+    font-size: 300%;
+    padding: 120px 0 30px 0;
     text-align: center;
+    border: $debug-border;
 }
 
 .blurb{
-    padding: 2em 2em 3em 2em;
+    font-size: 120%;
+    text-align: center;
+    padding: 25px 60px 120px 60px;
 }
 
-.proj_row{
+/* Row contains projects or social profiles. */
+.row{
     position: relative;
     width: $row-width;
     height: $row-height;
     margin: auto;
-    /*
-    border-style: solid;
-    border-color: blue;
-    */
+    border: $debug-border;
 }
-.proj_left{
-    position: absolute;
-    text-align: center;
-    left: 0;
-    width: $proj-width;
-}
-.proj_right{
-    position: absolute;
-    text-align: center;
-    left: $row-width / 2;
-    width: $proj-width;
-}
+
+/* Projects. */
+.proj_left, 
+.proj_right,
 .proj_center{
     position: absolute;
     text-align: center;
-    left: $row-width / 2 - $proj-width / 2;
-    width: $proj-width;
+    width: $row-width / 7;
+    font-size: 90%;
+    border: $debug-border;
+}
+.proj_left{
+    left: $row-width / 7 * 2;
+}
+.proj_center{
+    width: $row-width;
+    bottom: 10%;
+    //left: $row-width / 7 * 3;
+}
+.proj_right{
+    left: $row-width / 7 * 4;
+}
+
+/* Social profiles. */
+.social_left,
+.social_center,
+.social_right{
+    position: absolute;
+    bottom: 40%;
+    text-align: center;
+    font-size: 90%;
+    width: $row-width / 5;
+    border: $debug-border;
+    white-space: nowrap;
+}
+.social_left{ 
+    left: $row-width / 5 * 1;
+}
+.social_center{
+    left: $row-width / 5 * 2;
+}
+.social_right{
+    left: $row-width / 5 * 3;
 }
 
 .footer{
     /* Since container is relative,
        this places footer on the bottom. */
     position: absolute;
-    bottom: 1em;
+    bottom: 0.2em;
 
     width: 100%;
     text-align: center;
-    font-size: 75%;
+    font-size: 65%;
     font-style: italic;
+
+    border: $debug-border;
+}
+
+.footer a{
+    color: $bg-color;
 }
