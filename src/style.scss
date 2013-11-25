@@ -59,7 +59,7 @@ body{
 
 .title{
     font-size: 300%;
-    padding: 120px 0 30px 0;
+    padding: 80px 0 20px 0;
     text-align: center;
     border: $debug-border;
 }
@@ -67,7 +67,7 @@ body{
 .blurb{
     font-size: 120%;
     text-align: center;
-    padding: 25px 60px 120px 60px;
+    padding: 0 60px 40px 60px;
 }
 
 /* Row contains projects or social profiles. */
@@ -80,25 +80,48 @@ body{
 }
 
 /* Projects. */
-.proj_left, 
-.proj_right,
-.proj_center{
+.proj_10oclock,
+.proj_12oclock,
+.proj_02oclock,
+.proj_center,
+.proj_04oclock,
+.proj_06oclock,
+.proj_08oclock{
     position: absolute;
     text-align: center;
-    width: $row-width / 7;
+    width: $row-width / 5;
     font-size: 90%;
     border: $debug-border;
 }
-.proj_left{
-    left: $row-width / 7 * 2;
+.proj_10oclock{
+    top: 20%;
+    left: $row-width / 5 * 1;
 }
+.proj_12oclock{
+    bottom: 30%;
+    left: $row-width / 5 * 2;
+}
+.proj_02oclock{
+    top: 20%;
+    left: $row-width / 5 * 3;
+}
+
 .proj_center{
     width: $row-width;
-    bottom: 10%;
-    //left: $row-width / 7 * 3;
+    bottom: 5%;
+    //left: $row-width / 5 * 2;
 }
-.proj_right{
-    left: $row-width / 7 * 4;
+.proj_08oclock{
+    bottom: 20%;
+    left: $row-width / 5 * 1;
+}
+.proj_06oclock{
+    top: 30%;
+    left: $row-width / 5 * 2;
+}
+.proj_04oclock{
+    bottom: 20%;
+    left: $row-width / 5 * 3;
 }
 
 /* Social profiles. */

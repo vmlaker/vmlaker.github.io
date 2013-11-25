@@ -37,14 +37,14 @@ body {
 
 .title {
   font-size: 300%;
-  padding: 120px 0 30px 0;
+  padding: 80px 0 20px 0;
   text-align: center;
   border: none; }
 
 .blurb {
   font-size: 120%;
   text-align: center;
-  padding: 25px 60px 120px 60px; }
+  padding: 0 60px 40px 60px; }
 
 /* Row contains projects or social profiles. */
 .row {
@@ -55,24 +55,46 @@ body {
   border: none; }
 
 /* Projects. */
-.proj_left,
-.proj_right,
-.proj_center {
+.proj_10oclock,
+.proj_12oclock,
+.proj_02oclock,
+.proj_center,
+.proj_04oclock,
+.proj_06oclock,
+.proj_08oclock {
   position: absolute;
   text-align: center;
-  width: 71.42857px;
+  width: 100px;
   font-size: 90%;
   border: none; }
 
-.proj_left {
-  left: 142.85714px; }
+.proj_10oclock {
+  top: 20%;
+  left: 100px; }
+
+.proj_12oclock {
+  bottom: 30%;
+  left: 200px; }
+
+.proj_02oclock {
+  top: 20%;
+  left: 300px; }
 
 .proj_center {
   width: 500px;
-  bottom: 10%; }
+  bottom: 5%; }
 
-.proj_right {
-  left: 285.71429px; }
+.proj_08oclock {
+  bottom: 20%;
+  left: 100px; }
+
+.proj_06oclock {
+  top: 30%;
+  left: 200px; }
+
+.proj_04oclock {
+  bottom: 20%;
+  left: 300px; }
 
 /* Social profiles. */
 .social_left,
