@@ -17,9 +17,9 @@ ul           { list-style-position: inside; padding-left: 0; margin: 10px 0 5px 
 .signature   { float: right; height: 100%; }
 .item        { position: relative; overflow: auto; }
 .item img    { float: right; }
-.item a      { color: black; text-decoration: none; }
-.item a:hover     { color: #666; }
-.item a:hover img { opacity: 0.85;  }
+a            { color: black; text-decoration: none; }
+a:hover      { color: #666; }
+a:hover img  { opacity: 0.85;  }
 .footer      {
     text-align: center;
     position: relative;
